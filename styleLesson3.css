@@ -26,7 +26,7 @@ h1{font-size: 2.5rem}
 
 article{
 	width:950px;
-	background-color: beige;
+	background-color: brown;
 	min-height: 480px;
 	padding: 5px;
 	margin-left: auto;
@@ -38,7 +38,7 @@ article{
 	float: left;
 	width: 940px;
 	padding: 5px;
-	background-color: silver;
+	background-color: yellow;
 }
 #navbar li{
 	font-size: 1.2rem;
@@ -88,7 +88,7 @@ article{
 #navbar li:hover a{
 	/* The top link dispaly when a user hovers over sub-menu items*/
 	text-decoration: none;
-	background-color: gray;
+	background-color: orange;
 }
 
 #navbar li:hover ul a {
@@ -109,7 +109,7 @@ article{
 @media (max-width: 959px) {
 	h1{font-size: 1.5rem}
 	article{
-		background-color: beige;
+		background-color: white;
 		min-height: 480px
 	}
 
@@ -146,6 +146,7 @@ article{
 	#navbar li:hover a{
 		text-decoration: none;
 		background-color: gray;
+		color:red;
 		border-radius: 5px 25px 25px 5px;
 		border-bottom: thin white solid;
 		width:75%
