@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+body{
+font-family:Arial,Verdana,sans-serif;
+
+font-size:1.3rem;
+line-height:1.2;
+}
+
+li{
+font-size:1.2rem;
+}
+
+.responsive-photo-90 {
+display: block;
+width: 90%;
+margin-right: auto;
+margin-left: auto;
+max-width:800px;
+}
+
+/* Media query 1 for viewports 960px and above*/
+
+@media(min-width: 960px){
+
+h1{
+	font-size: 2.5rem;
+	font-family: 'Roboto Slab', serif;
+	color:black;
+}
+
+article{
+	width:950px;
+	background-color: peachpuff;
+	min-height: 480px;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#navbar {
+	list-style: none;
+	margin-bottom: 10px;
+	float: left;
+	width: 940px;
+	padding: 5px;
+	background-color: seagreen;
+}
+#navbar li{
+	font-size: 1.2rem;
+	float: left;
+	margin-left: 40px;
+	margin-right: 40px;
+	position: relative;
+}
+
+#navbar a{
+	display: block;
+	padding: 5px;
+	color: white;
+	background: seagreen;
+	text-decoration: none;
+
+}
+
+#navbar a:hover{
+	color: lightyellow;
+	text-decoration: none;
+}
+
+/*Dropdown styling*/
+
+#navbar ul{
+	list-style: none;
+	position: absolute;
+	left: -9999px;/*Hide of screen when not hovered over*/
+}
+
+
+#navbar ul li{
+	padding-top: 5px; /*Between the li item */
+	float: none;
+	margin-left: -40px;
+}
+
+#navbar ul a{
+	white-space: nowrap;
+}
+
+#navbar li:hover ul{
+	left:0px;
+}
+
+#navbar li:hover a{
+	/* The top link dispaly when a user hovers over sub-menu items*/
+	text-decoration: none;
+	background-color: orangered;
+}
+
+#navbar li:hover ul a {
+	/*The hover state defined a global style for links even before they're hovered over. Here we undo these effects.*/
+	text-decoration: none;
+}
+
+#navbar li: hover ul li a:hover{
+	/*Define athe most explicit hover states when a user hovers over an individual link*/
+	background-color: black;
+	left: 0px;
+}
+
+}
+
+/*Media query 2: viewports 959px and narrower*/
+
+@media (max-width: 959px) {
+	h1{
+		font-size: 1.8rem;
+		font-family: 'Roboto Slab', serif;
+		color: black;
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	h3{
+		font-size: 1.1rem;
+	}
+
+	h2 h3{
+		color: black;
+		font-family: 'Lato', sans-serif;
+	}
+
+	article{
+		background-color: white;
+		color: darkred;
+		min-height: 480px
+		padding: 5px;
+	}
+
+	a{
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.5rem;
+		color:black;
+		text-decoration: none;
+	}
+	
+	#navbar{
+		list-style: none;
+		margin-bottom: 10px;
+	}
+
+	#navbar li{
+		position: relative;
+		margin-left: 40px;
+	}
+
+	#navbar a{
+		font-size: 1.25rem;
+		display: block;
+		width: 66%;
+		padding: 10px;
+		margin-bottom: 5px;
+		color: white;
+		background: black;
+		text-decoration: none;
+		border-radius: 1px 5px 5px 1px;
+	}
+	#navbar a:hover{
+		color: yellow;
+		text-decoration: none;
+	}
+
+	/* Hide submenus in mobile devices*/
+	#navbar ul li{
+		display: none;
+	}
+	#navbar li:hover a{
+		text-decoration: none;
+		background-color: honeydew;
+		color:darkred;
+		border-radius: 5px 25px 25px 5px;
+		border-bottom: thin white solid;
+		width:75%
+	}
+}
