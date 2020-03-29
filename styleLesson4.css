@@ -19,6 +19,12 @@ margin-left: auto;
 max-width:800px;
 }
 
+#assigment{
+	color: black;
+}
+
+
+
 /* Media query 1 for viewports 960px and above*/
 
 @media(min-width: 960px){
@@ -37,6 +43,18 @@ article{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+li.AQ{
+	list-style: none;
+	color: black;
+	font-size: 1rem;
+}
+
+ul.AA{
+	color: darkblue;
+	font-size: 0.9rem;
+}
+
 #navbar {
 	list-style: none;
 	margin-bottom: 10px;
@@ -107,6 +125,8 @@ article{
 	left: 0px;
 }
 
+
+
 }
 
 /*Media query 2: viewports 959px and narrower*/
@@ -142,6 +162,18 @@ article{
 		font-size: 1.5rem;
 		color:black;
 		text-decoration: none;
+	}
+
+	li.AQ{
+		list-style: none;
+		color: black;
+		font-size: 1.2rem;
+	}
+
+	ul.AA{
+		text-decoration: none;
+		color: darkblue;
+		font-size: 1.0rem;
 	}
 	
 	#navbar{
@@ -182,4 +214,5 @@ article{
 		border-bottom: thin white solid;
 		width:75%
 	}
+	
 }
