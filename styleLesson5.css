@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+/* CCSS Document */
+
+/* First we are just defining some global styling using the body element --  line height */
+
+body{
+	line-height: 1.5
+}
+
+/* We ar eturnign off underlining for links */
+
+a{
+	text-decoration: none;
+}
+
+/* We are indenting paragraphs so paragraph text doesn't bump into each other elements */
+
+p{
+	margin-left: 5px;
+}
+
+/* We are adding a bit of spacing around images*/
+
+img{
+	margin: 5px;
+}
+
+/*Now we are begin defining the columns that will display in full-sized browser*/
+
+article{
+	position: relative;
+	width: 100%;
+	background-color: lavender;
+	color: brown;
+	min-height: 550px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+header{
+font-family: 'Roboto Slab', serif;
+	margin-right: auto;
+margin-left: auto;
+text-align: center;
+height: 50px;
+color:green;
+}
+
+
+footer{
+	padding-top:1%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	text-align:center;
+}
+
+#SS, #BS, #MS{
+	font-size:0.7rem;
+	display: initial;
+}
+
+section{
+	padding: 1%;
+	margin: 1%;
+	min-height: 500px;
+	float:left;
+	font-family: 'Roboto Slab',serif
+}
+/* ------------ BIG SCREENS --------------*/
+@media (min-width: 960px){
+/* HEADER is the fourth column*/
+
+body{
+		font-family: 'Roboto Slab', 'Lato', serif;
+}
+
+header{
+	float:left;
+	transform: rotate(-90deg);
+	margin-top:100px;
+	width:14%;/*                                      *//* 18 */
+}
+
+
+#a img{
+	float: left;
+	width: auto;
+	height: auto;
+	max-width: 90%;
+	margin:10px;
+
+}
+#a {
+	width: 30%;/*4% plus on the sides fro the section*//* 34 */
+	background-color: green;
+	color:white;
+}
+
+#b{
+	width:20%;/*4% plus on the sides fro the section*//* 24 */
+	background-color: white;
+	color: darkgreen;
+}
+#b img, #c img{
+	margin: 2%;
+	width: auto;
+	height: auto;
+	max-width: 90%;
+}
+
+#c{
+	width:20%;/*4% plus on the sides fro the section*//* 24 */
+	background-color: white;
+}
+/*                                              TOTAL:   18 + 34 + 24 + 24 = 100*/
+#MS, #SS{
+	display: none;
+}
+
+}
+
+
+/* ------------ TABLETS/LANDSCAPES PHONE SCREENS --------------*/
+@media (min-width: 481px) and (max-width: 959px){
+
+	body{
+		font-family: 'Roboto Slab', 'Lato', serif;
+	}
+
+	/*From David*/
+	article{position: relative;
+		width:95%;/* We are chanign the width from ap ixel value to a relative value to resize
+		in different tablets*/
+		spadding-bottom: 0%;
+		padding-bottom: 0.1em;
+		padding-top: 1rem;
+		margin-bottom: 1%;
+		background-color: lightcyan;
+	}
+	
+	section{
+		min-height: 320px; /*We are reducing the minimum height*/
+		font-family: 'Roboto', sans-serif
+	}
+
+	section img{
+		float:left;/* We are floating images in sections for a more compact tablet design*/
+		padding:10px;
+	}
+	/* End From David */
+	#a{
+		float:none;
+		width: 96%;
+		min-height: 200px;
+		background-color: green;
+		color:white;
+	}
+	#a img{
+		float:left;
+	}
+	#b{
+		width:44%;
+		min-height: 200px;
+		background-color: white;
+		color: darkgreen;
+	}
+	#b img, #c img{
+		float:none;
+		margin: 2%
+		width: auto;
+		height: auto;
+	max-width: 90%;
+
+	}
+	#c{
+		width: 44%;
+		min-height: 200px;
+		float:left;
+		background-color: orchid;
+	}
+	
+	#BS,#SS{
+	display: none;
+}
+}
+
+/* ------------ SMALL WIDTH SCREENS --------------*/
+@media(max-width: 480px){
+	body{
+		font-family: 'Roboto', 'Lato', sans-serif;
+	}
+
+	article{
+		width: 98%;
+		margin: 0px;
+		padding: 0px;
+		background-color: white;
+		font-size:1rem;
+
+	}
+
+	section{
+		font-family: 'Lato',sans-serif
+		float: none;
+		min-height: 200px;
+		color:black;
+	}
+
+	section img{
+		float:left;
+		padding:10px;
+	}
+
+	#a{
+		sfloat:none;
+		min-height: 350px;
+		width: 96%;
+		background-color: palegreen;
+	}
+
+
+	#b{
+		sfloat:none;
+		min-height: 350px;
+		width: 96%;
+		background-color: lightcyan;
+	}
+	#c{
+		sfloat:none;
+		min-height: 350px;
+		width: 96%;
+		background-color: lightcyan;
+	}
+
+	#a img, #b img, #c img{
+		float:none;
+		margin: 2%
+		width: auto;
+		height: auto;
+	max-width: 90%;
+
+	}
+
+
+	footer #MS, #BS{
+		display: none;
+	}
+
+}
