@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* CCSS Document */
+
+/* First we are just defining some global styling using the body element --  line height */
+
+body{
+	/*line-height: 1.5*/
+}
+
+/* We ar eturnign off underlining for links */
+
+a{
+	text-decoration: none;
+}
+
+/* We are indenting paragraphs so paragraph text doesn't bump into each other elements */
+
+bp{
+	margin-left: 0px;
+}
+
+/* We are adding a bit of spacing around images*/
+
+img{
+	margin: 5px;
+}
+
+/*Now we are begin defining the columns that will display in full-sized browser*/
+
+article{
+			float: left;
+			width: 18%;
+			margin:1%;
+			padding:1%;
+			background-color: beige;
+			min-height: 270px;
+}
+
+summary{
+			cursor: pointer;
+			font-weight: 2;
+		}
+		
+		#l1 summary {
+		}
+		#l2 summary{
+		}
+		#l3 summary{
+		}
+		details{
+			background-color: pink;
+			font-size: 1.2rem;
+			padding: 0.0rem;
+			margin: 0.5rem;
+		}
+		details p{
+			margin-left: 2.5rem;
+			background-color: lightcoral;
+		}
+
+		#l1{
+			font-size: 2rem;
+			margin-left: 0px;
+		}
+
+
+		#l2{
+			font-size: 1.5rem;
+			margin-left: 20px;
+		}
+		#l3{
+			font-size: 1rem;
+			margin-left: 40px;
+		}
+
+		@media (max-width: 480px) {
+			article{
+				display: none
+			}
+		}
+		@media (min-width: 481px){
+			summary{
+				display: none;
+			}
+		}
+
+
+header{
+font-family: 'Roboto Slab', serif;
+	margin-right: auto;
+margin-left: auto;
+text-align: center;
+height: 50px;
+color:green;
+}
+
+
+footer{
+	padding-top:1%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	text-align:center;
+}
+
