@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Responsive Images</title>
+</head>
+<body>
+	<h1>Image Sized with HTML</h1>
+	<h2>Mesa photo with a 12 of Quality on GIMP</h2>
+	<img src="Lesson7Photos/mesa12.JPG" width="400px" alt="placeholder">
+	<h2>Bottle openner photo with a 55 of Quality on GIMP</h2>
+	<img src="Lesson7Photos/bottleOpener55.JPG" width="400px" alt="placeholder">
+	<h2>Sedona Landscape photo with a 20 of Quality on GIMP</h2>
+	<img src="Lesson7Photos/SedonaLandscape20.JPG" width="400px" alt="placeholder">
+	<h2>Sedona Portrait photo with a 22 of Quality on GIMP</h2>
+	<img src="Lesson7Photos/SedonaPortrait22.JPG" width="400px" alt="placeholder">
+	<h2>Start at the hook photo with a 35 of Quality on GIMP</h2>
+	<img src="Lesson7Photos/startAtTheHook35.JPG" width="400px" alt="placeholder">
+	<h2>Turn at the hook photo with a 35 of Quality on GIMP</h2>
+	<img src="Lesson7Photos/turnAtTheHook35.JPG" width="400px" alt="placeholder">
+
+	<h1>Image Sized with CSS</h1>
+	<figure style="width:33%;">
+	<img src="Lesson7Photos/mesa12.jpg" style="width:100%;">
+	<figcaption>Mesa photo with a 12 of Quality on GIMP</figcaption>
+	</figure>
+	<figure style="width:33%;">
+	<img src="Lesson7Photos/bottleOpener55.JPG" style="width:100%;">
+	<figcaption>Bottle openner photo with a 55 of Quality on GIMP</figcaption>
+	</figure>
+	<figure style="width:33%;">
+	<img src="Lesson7Photos/SedonaLandscape20.JPG" style="width:100%;">
+	<figcaption>Sedona Landscape photo with a 20 of Quality on GIMP</figcaption>
+	</figure>
+	<figure style="width:33%;">
+	<img src="Lesson7Photos/SedonaPortrait22.JPG" style="width:100%;">
+	<figcaption>Sedona Portrait photo with a 22 of Quality on GIMP</figcaption>
+	</figure>
+	<figure style="width:33%;">
+	<img src="Lesson7Photos/startAtTheHook35.JPG" style="width:100%;">
+	<figcaption>Start at the hook photo with a 35 of Quality on GIMP</figcaption>
+	</figure>
+	</figure>
+	<figure style="width:33%;">
+	<img src="Lesson7Photos/turnAtTheHook35.JPG" style="width:100%;">
+	<figcaption>Turn at the hook photo with a 35 of Quality on GIMP</figcaption>
+	</figure>
+
+	<h1>Responsive Images </h1>
+	<figure style="width: 44%;">
+		<img src="Lesson7Photos/bottleOpener55.JPG" 
+		alt="bottleOpener55"
+		sizes="(max-width: 480px) 100vw, (max-width: 2400px) 49vw"
+		srcset="Lesson7Photos/bottleOpener55W400.JPG 400w, Lesson7Photos/bottleOpener55W800.JPG 800w, Lesson7Photos/bottleOpener55W1600.JPG 1600w,Lesson7Photos/bottleOpener55W2400.JPG 2400w"
+		>
+		<figcaption>Bottle openner photo with a 55 of Quality on GIMP</figcaption>
+	</figure>
+	<figure style="width: 44%;">
+<img src="Lesson7Photos/turnAtTheHook35.JPG" 
+	alt="Turn at the Hook"
+	sizes="(max-width: 480px) 100vw, (max-width:2400px) 49vw"
+	srcset="Lesson7Photos/turnAtTheHook35W400.JPG 400w, Lesson7Photos/turnAtTheHook35W800.JPG 800w, Lesson7Photos/turnAtTheHook35W1600.JPG 1600w, Lesson7Photos/turnAtTheHook35W2400.JPG 2400w" 
+>
+<figcaption>Turn at the hook photo with a 35 of Quality on GIMP</figcaption>
+	</figure>
+</body>
+</html>
