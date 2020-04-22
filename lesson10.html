@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Lesson 10 Assignment</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- these are library file of css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<!-- this is library file of Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--this is library file of javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+        margin: 20px;
+    }
+    button{
+    	margin-top: 2rem;
+    	margin-bottom: 1rem;
+    }
+    h2{
+margin: 0;
+color: orange;
+padding-top: 90px;
+font-size: 52px;
+font-family: "trebuchet ms", sans-serif;
+}
+.item{
+background: green;
+text-align: center;
+height: 300px !important;
+}
+.carousel{
+margin-top: 20px;
+}
+</style>
+</head>
+<body>
+	<div></div>
+	<a href="https://www.numberphile.com/" target="_blank">
+	<button type="button" class="btn btn-primary btn-lg btn-block">Learn About Mathematics <span class="glyphicon glyphicon-arrow-right"></span></button>
+</a>
+<p></p>
+
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand">Welcome</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="https://igpogo.github.com/IPGORDW" class="nav-item nav-link">Home</a>
+                <a href="https://www.formget.com/bootstrap-carousel/" class="nav-item nav-link">Lesson's Source</a>
+                <a href="https://en.wikipedia.org/wiki/Michelangelo" class="nav-item nav-link">About Michelangelo</a>
+                <a href="https://en.wikipedia.org/wiki/John_Horton_Conway" class="nav-item nav-link">About Conway</a>
+                <a href="https://xkcd.com/2293/" class="nav-item nav-link disabled" tabindex="-1">Conway tribute at xkcd</a>
+            </div>
+            
+        </div>
+    </nav>
+</div>
+<!--this DIV use for carousel and sliding time-->
+<div class="bs-example">
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+<!-- this DIV use for carousel indicators for slider-->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+<li data-target="#myCarousel" data-slide-to="3"></li>
+<li data-target="#myCarousel" data-slide-to="4"></li>
+</ol>
+<!--Wrapper for carousel items which are show in output form-->
+<div class="carousel-inner">
+<!--this is first slider page-->
+<div class="active item">
+<a href="https://igpogo.github.com/IPGORDW">
+<h2>Home</h2>
+<div class="carousel-caption">
+	
+<h3>Home Link</h3>
+</a>
+<p>Back to the root</p>
+<p style="font-size: 1.1rem;color:black;">You can press title and subtitle of the slide to follow the link</p>
+</div>
+</div>
+<!-- this is second slider page-->
+<div class="item">
+<h2>Lesson's Source</h2>
+<div class="carousel-caption">
+	<a href="https://www.formget.com/bootstrap-carousel">
+<h3>Second slide label</h3>
+</a>
+<p>https://www.formget.com/bootstrap-carousel/</p>
+<p style="font-size: 1.1rem;color:black;">You can press subtitle of the slide to follow the link</p>
+</div>
+</div>
+<!-- this is third slider page-->
+<div class="item">
+<h2>Michelangelo</h2>
+<div class="carousel-caption">
+<h3>Not the ninja, the other one</h3>
+<a href="https://en.wikipedia.org/wiki/Michelangelo">https://en.wikipedia.org/wiki/Michelangelo</a>
+<p style="font-size: 1.1rem;color:black;">You can press the body's slide to follow the link</p>
+</div>
+</div>
+<!-- this is fourth slider page-->
+<a class= "item" href="https://en.wikipedia.org/wiki/John_Horton_Conway">
+<div class="item">
+<h2>Conway</h2>
+<div class="carousel-caption">
+<h3>Math enthusiast</h3>
+<p>https://en.wikipedia.org/wiki/John_Horton_Conway</p>
+<p style="font-size: 1.1rem;color:black;">You can press any part of the slide to follow the link</p>
+</div>
+</div>
+</a>
+
+<!-- this is fifth slider page-->
+<div class="item">
+<a href="https://xkcd.com/2293/">
+<h2>Conway tribute at xkcd</h2>
+<div class="carousel-caption">
+<h3>xkcd</h3>
+<p>https://xkcd.com</p>
+</a>
+<p style="font-size: 1.1rem;color:black;">You can press any text of the slide to follow the link</p>
+</div>
+
+<!-- this is close of the slider element-->
+</div>
+
+
+</div>
+<!-- this is carousel controls for used of next and previous pages slider-->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+</body>
+</html>
