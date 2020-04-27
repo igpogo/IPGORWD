@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+  <meta name=description content="">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="lesson12Files/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="lesson12Files/my-custom-theme.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <title>JQuery Mobile Mathematicians Page</title>
+  <style type="text/css">
+		@media (min-width: 769px){
+			body{
+				background-color: beige;
+				font-family: Verdana,serif;
+				float: left;
+			}
+
+			.ui-content{
+				background-color: beige;
+				color:red;
+				width: 80%;
+				margin:auto;
+				min-height: 800px;
+			}
+
+			.ui-btn{
+				font-size: 1rem;
+				float: left;
+				background-color: red;
+				width: 26%;
+				text-decoration: none;
+				margin-right: 1%;
+				margin-left: 1%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+  <div data-role="page" id="page01" data-theme="a">
+    <div data-role="header">
+      <h1>Mathematicians</h1>
+    </div>
+    <div data-role="ui-content" role="main">
+      <ul data-role="listview">
+        <li>
+          <a href="https://en.wikipedia.org/wiki/John_Horton_Conway">
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" alt="Conway">
+            <h2>John Conway</h2>
+            <p>Number theory, finite groups, knot theory, combinatorial game theory,
+            coding theory</p>
+          </a>
+        </li>
+        <li class="ui-li-has-thumb">
+          <a href="https://en.wikipedia.org/wiki/%C3%89variste_Galois">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Evariste_galois.jpg/186px-Evariste_galois.jpg" alt="Galois portrait">
+            <h2>Évariste Galois</h2>
+            <p>Father of group theory</p>
+          </a>
+        </li>
+        <li>
+          <a href="#newton">
+          	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/ENG_COA_Newton.svg/218px-ENG_COA_Newton.svg.png" alt="Newton's Coat of Arms">
+            <h2>Newton</h2>
+            <p>Calculus and physics </p>
+          </a>
+        </li>
+        <li>
+          <a href="#pythagoras">
+          	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pythagorean.svg/264px-Pythagorean.svg.png" alt="Pythagorean theorem">
+            <h2>Pythagoras of Samos</h2>
+            <p>Geometry and all the rest</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div data-role="footer">
+      <h1>IP</h1>
+    </div>
+  </div>
+  </div>
+  <div data-role="page" id="newton"  data-theme="b">
+    <div data-role="header">
+      <h1>Isaac Newton</h1>
+    </div>
+    <div data-role="ui-content" role="main">
+      <h1>Isaac Newton</h1>
+      <p><b>Sir Isaac Newton</b> <span class="noexcerpt nowraplinks" style="font-size:100%;"><a href="/wiki/President_of_the_Royal_Society" class="mw-redirect" title="President of the Royal Society">PRS</a></span> (25 December 1642&nbsp;– 20 March <a href="/wiki/Old_Style_and_New_Style_dates" title="Old Style and New Style dates">1726/27</a><sup id="cite_ref-OSNS_3-2" class="reference"><a href="#cite_note-OSNS-3">[a]</a></sup>) was an English mathematician, <a href="/wiki/Physics" title="Physics">physicist</a>, <a href="/wiki/Astronomy" title="Astronomy">astronomer</a>, theologian, and author (described in his own day as a "<a href="/wiki/Natural_philosophy" title="Natural philosophy">natural philosopher</a>") who is widely recognised as one of the most influential scientists of all time and as a key figure in the <a href="/wiki/Scientific_revolution" class="mw-redirect" title="Scientific revolution">scientific revolution</a>. His book <i><a href="/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica" title="Philosophiæ Naturalis Principia Mathematica">Philosophiæ Naturalis Principia Mathematica</a></i> (<i>Mathematical Principles of Natural Philosophy</i>), first published in 1687, laid the foundations of <a href="/wiki/Classical_mechanics" title="Classical mechanics">classical mechanics</a>. Newton also made seminal contributions to <a href="/wiki/Optics" title="Optics">optics</a>, and shares credit with <a href="/wiki/Gottfried_Wilhelm_Leibniz" title="Gottfried Wilhelm Leibniz">Gottfried Wilhelm Leibniz</a> for developing the infinitesimal <a href="/wiki/Calculus" title="Calculus">calculus</a>.
+</p>
+    </div>
+    <div data-role="footer">
+    	<a href="#page01" class="ui-btn"><h4>Back</h4></a>
+      
+    </div>
+  </div>
+  <!-- 3 page -->
+  <div data-role="page" id="pythagoras" data-theme="b">
+    <div data-role="header">
+      <h1>Pithagoras of Samos</h1>
+    </div>
+    <div data-role="ui-content" role="main">
+      <h1>Pithagoras of Samos</h1>
+      <p><b>Pythagoras of Samos</b><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[a]</a></sup> (<a href="/wiki/Circa" title="Circa">c.</a><span style="white-space:nowrap;"> 570</span>&nbsp;– c.<span style="white-space:nowrap;"> 495&nbsp;BC</span>)<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[b]</a></sup> was an ancient <a href="/wiki/Ionians" title="Ionians">Ionian</a> <a href="/wiki/Ancient_Greek_philosophy" title="Ancient Greek philosophy">Greek philosopher</a> and the eponymous founder of <a href="/wiki/Pythagoreanism" title="Pythagoreanism">Pythagoreanism</a>. His political and religious teachings were well known in <a href="/wiki/Magna_Graecia" title="Magna Graecia">Magna Graecia</a> and influenced the philosophies of <a href="/wiki/Plato" title="Plato">Plato</a>, <a href="/wiki/Aristotle" title="Aristotle">Aristotle</a>, and, through them, <a href="/wiki/Western_philosophy" title="Western philosophy">Western philosophy</a>. Knowledge of his life is clouded by legend, but he appears to have been the son of Mnesarchus, a gem-engraver on the island of <a href="/wiki/Samos" title="Samos">Samos</a>. Modern scholars disagree regarding Pythagoras's education and influences, but they do agree that, around 530 BC, he travelled to <a href="/wiki/Crotone" title="Crotone">Croton</a>, in what is now southern Italy, where he founded a school in which initiates were sworn to secrecy and lived a <a href="/wiki/Communalism" title="Communalism">communal</a>, <a href="/wiki/Asceticism" title="Asceticism">ascetic</a> lifestyle. This lifestyle entailed a number of dietary prohibitions, but is traditionally said to have included <a href="/wiki/Vegetarianism" title="Vegetarianism">vegetarianism</a>.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[5]</a></sup>
+</p>
+    </div>
+    <div data-role="footer">
+      <a href="#page01" class="ui-btn">Back</a>
+    </div>
+  </div>
+</body>
+
+</html>
